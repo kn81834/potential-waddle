@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+using namespace std;
+
+/*
+ * Tokeit takes in input from the user and parses the command line to then
+ * store the command line into separate tokens. Each token is then stored in
+ * a 2d char array to be used later on in execvp then executed, or if execvp fails,
+ * an error message is given to the user.
+ */
+
+int main() {
+  
+  string line;
+  getline(cin, line); //storing user input into a string
+  char holder[512];
+  char* file[10];
+  char** next = file;
+  int i = 0; 
+  
+  for(uint j = 0; j < line.length() + 1; ++j) { //storing string into char array 
+    holder[j] = line[j];
+  }
+
+  char* token = strtok(holder, " "); //calling strtok to begin tokenizing
+
+  while(token != NULL) { //stores each token into 2d char array
+    *next++ = token;
+    token = strtok(NULL, " ");
+    if(i > 10) {
+      perror("too many tokens");
+      exit(1);
+    }
+    ++i;
+  }
+
+  *next = NULL; //placing null pointer to denote termination
+  
+  cout << "done parsing" << endl;
+  cout << "num args: " << i << endl; //print statements for number of tokens
+
+  for(int j = 0; j < i; ++j) { //looping for printing each individual token
+    printf("%s\n", file[j]);
+  }
+  
+  execvp(file[0], file); //execing file using execvp with 2d char array
+
+  perror("error exec'ing: No such file or directory"); //error statement if exec does not exec
+  
+  return 0;
+}

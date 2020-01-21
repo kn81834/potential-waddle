@@ -1,0 +1,21 @@
+Everett-Nguyen-p4:
+total 328
+-rwxr-xr-x 1 ugrad  6899 Apr 29 15:40 dosegfault
+-rw-r--r-- 1 ugrad    53 Apr 29 15:40 dosegfault.cpp
+-rw-r--r-- 1 ugrad    53 Apr 29 15:40 dosegfault.cpp~
+-rwxr-xr-x 1 ugrad 59961 Apr 29 15:51 launcher
+-rw-r--r-- 1 ugrad     0 Apr 29 14:38 launcher.
+-rw-r--r-- 1 ugrad  1193 Apr 29 16:00 launcher.cpp
+-rw-r--r-- 1 ugrad  1122 Apr 29 15:59 launcher.cpp~
+-rw-r--r-- 1 ugrad 80856 Apr 29 15:49 launcher.o
+-rw-r--r-- 1 ugrad   296 Apr 21 12:26 Makefile
+-rw-r--r-- 1 ugrad   278 Apr 21 12:26 Makefile~
+-rw-r--r-- 1 ugrad   116 Apr 29 15:57 README.md
+-rw-r--r-- 1 ugrad   111 Apr 21 13:13 README.md~
+-rw-r--r-- 1 ugrad     0 Apr 29 16:00 rec15032
+-rwxr-xr-x 1 ugrad 59755 Apr 29 15:51 tokeit
+-rw-r--r-- 1 ugrad     0 Apr 21 13:22 tokeit.
+-rw-r--r-- 1 ugrad  1387 Apr 29 15:56 tokeit.cpp
+-rw-r--r-- 1 ugrad   808 Apr 29 15:51 tokeit.cpp~
+-rw-r--r-- 1 ugrad 80456 Apr 29 15:51 tokeit.o
+/home/ugrads/knguyen/cs1730/Everett-Nguyen-p4:/home/work/cs1730a
